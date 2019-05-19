@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteRule ^havadurumu?$ index.php
+RewriteRule ^havadurumu/?$ index.php
+RewriteRule ^havadurumu/([A-Za-z]+) index.php?id=$1
+ErrorDocument 404 "{\"hata\":\"sayfa bulunamadi\",\"kod\":404}"
